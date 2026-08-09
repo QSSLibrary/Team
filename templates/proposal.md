@@ -1,4 +1,65 @@
 # Proposal Template
+> [!Important]
+> ## How to use this template as a GitHub PR
+>
+> This file is a **content template** — a complete
+> document skeleton for proposals, decisions, and
+> other governance artifacts. It is **not** the PR
+> template that GitHub pre-fills into the PR body.
+>
+> The PR templates that GitHub pre-fills live in
+> `.github/PULL_REQUEST_TEMPLATE/` of this repository.
+> The detailed content for the actual proposal goes
+> in the body of the proposal file (e.g., a markdown
+> file in `proposals/` or in the affected document's
+> directory). Both layers exist intentionally: the
+> PR template is for the **review process**, this
+> content template is for the **artifact itself**.
+>
+> ### GitHub URL parameter procedure
+>
+> When you create a PR, you can ask GitHub to
+> pre-fill the PR body with a specific template by
+> using a `?template=` query parameter in the
+> compare URL:
+>
+> ```
+> https://github.com/QSSLibrary/Team/compare/<branch>?template=<template-name>.md
+> ```
+>
+> Example for a new working-group proposal on a
+> branch `wg/celestial-mechanics`:
+>
+> ```
+> https://github.com/QSSLibrary/Team/compare/wg/celestial-mechanics?template=wg-proposal.md
+> ```
+>
+> GitHub looks up `<template-name>.md` in
+> `.github/PULL_REQUEST_TEMPLATE/` and pre-fills the
+> PR body with its contents.
+>
+> ### Branch naming convention
+>
+> Use these branch-name prefixes to keep PRs
+> organized and easy to find:
+>
+> | Prefix | Used for | Example |
+> |---|---|---|
+> | `wg/<name>` | New working-group proposal | `wg/celestial-mechanics` |
+> | `gov/<name>` | Governance document change | `gov/charter-amendment-v2` |
+> | `std/<name>` | Standard, policy, or guideline change | `std/cpp-style-update` |
+> | `decisions/<name>` | ADR / decision record | `decisions/adr-001-cpp20` |
+> | `joint/<name>` | Joint WG proposal (cross-WG collaboration) | `joint/spherical-astronomy` |
+> | `topic/<name>` | Anything else | `topic/fix-typo` |
+>
+> Use lowercase, hyphens, and keep names short. One
+> branch per proposal or change set; do not reuse
+> branches across unrelated changes. This keeps the
+> `Team` repository from accumulating many stale
+> branches. The full branch naming convention is in
+> `BRANCH-NAMING.md` at the root of this repository.
+>
+> ---
 
 > A reusable template for any formal proposal to the
 > QSSL project. Use this template for:
